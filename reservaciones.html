@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Hindi Food</title>
+    <link rel="stylesheet" href="Css/Reservacionesstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!-- Navbar -->
+ <nav class="navbar">
+  <div class="logo-title">
+    <img src="Img/Logo.png" alt="Logo" style="height: 100px;">
+    <a href="index.html" class="site-title">Lotus Hindi Food</a>
+  </div>
+          <ul class="nav-links">
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+      <!-- Navbar -->
+      <header class="menu-header">
+        <video src="img/video_restaurante.mp4" autoplay muted loop class=""></video>
+        <div class="overlay"></div> 
+        <h1 class="header-title">Reservaciones</h1>
+      </header>
+
+    <main>
+        <section id="Mapa" class="seccion aparece">
+            <div class="mapa-iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31522.201355928075!2d151.20167932875336!3d-33.85452781197136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sjp!4v1747787243108!5m2!1ses!2sjp" width="500" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="reservaciones-container aparece">
+                <h2 class="titulo">Reserva tu mesa</h2>
+                <p class="subtitulo">Favor de rellenar correctamente los campos solicitados para tu reservación</p>
+                
+                <div class="reservacion-form">
+                    <form action="proceso.php" method="POST">
+                        <label for="first-name">Nombre:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Nombre" required autocomplete="given-name">
+
+                        <label for="last-name">Apellido:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Apellido" required autocomplete="family-name">
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ejemplo: 123456@gmail.com" required autocomplete="email">
+
+                        <label for="phone">Número de Teléfono:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ejemplo: +52 123-456-7890" required pattern="\+?[0-9\s\-]+" autocomplete="tel">
+
+                        <label for="fecha_hora">Selecciona tu fecha y hora de reservación:</label>
+                        <input type="datetime-local" id="fecha_hora" name="fecha_hora" required autocomplete="off">
+                        
+                        <button type="submit" class="hero-right fade-in-right delay-more hero-buttons btn btn-pink">Enviar</button>
+
+                    </form>
+                </div>
+            </div>
+    </main>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-contenido">
+    <div class="footer-texto aparece">
+      <h2>Contáctanos</h2>
+      <hr class="footer-linea">
+      <p>
+        ¿Tienes preguntas, sugerencias o deseas hacer una reservación? Estamos aquí para ayudarte. 
+        En Lotus Hindi Food valoramos tu opinión y nos encanta conectar con nuestros comensales. 
+        No dudes en escribirnos para conocer más sobre nuestro menú, eventos especiales o servicio a domicilio.
+      </p>
+    
+      <div class="footer-enlaces">
+        <a href="menu.html"><span>Menú completo</span></a>
+        <a href="reservaciones.html"><span>Reservaciones</span></a>
+        <a href="nosotros.html"><span>Ubicación y horario</span></a>
+      </div>
+    
+      <p class="footer-copy">
+        © 2025 Edgar Behar · Rafael Cano · Aylin Cruz · José Juárez · Vivian Uribe
+      </p>
+    </div>
+    
+    <div class="footer-logo aparece">
+      <img src="Img/Logo 4.png" alt="Logo de loto">
+    </div>
+  </div>
+</footer>
+<!-- Footer -->
+</body>
+</html>
